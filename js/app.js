@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const nombre = nameField.value.trim();
         const adultos = adultsField?.value || "0";
         const ninos = childrenField?.value || "0";
-        const numero = "525518558728";
+        const numero = "525613154031";
 
         let mensaje;
         if (!checkbox.checked) {
