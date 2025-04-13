@@ -265,3 +265,7 @@ body {
     align-items: center;
     justify-content: center;
   }
+
+  .bg-opacity {
+    background: rgba(0, 0, 0, 0.6);
+  }
