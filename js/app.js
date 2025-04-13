@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (!checkbox.checked) {
             const adultsValue = parseInt(adultsField.value, 10);
-            if (isNaN(adultsValue) || adultsValue < 1 || adultsValue > 10) {
+            if (isNaN(adultsValue) || adultsValue < 1 || adultsValue > 5) {
                 adultsField.classList.add("is-invalid");
                 adultsField.classList.remove("is-valid");
                 mostrarError(adultsField, true);
@@ -182,7 +182,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     esValido = true; // vacío = válido (si es opcional)
                 } else {
                     const val = parseInt(input.value, 10);
-                    esValido = !isNaN(val) && val >= parseInt(input.min || "0") && val <= parseInt(input.max || "10");
+                    esValido = !isNaN(val) && val >= parseInt(input.min || "0") && val <= parseInt(input.max || "5");
                 }
             }
             
