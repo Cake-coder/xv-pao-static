@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  * img {
+    border: none;
+  }
+
+.alex-brush-regular {
+    font-family: "Alex Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.arapey-regular {
+    font-family: "Arapey", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.arapey-regular-italic {
+    font-family: "Arapey", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.great-vibes-regular {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+  
+body {
+    background-color: #0c241b;
+    /*background-image: url("../img/bg_2.png");
+    background-repeat: no-repeat; 
+    background-position: top center; 
+    background-size: cover;*/
+    overflow-x: hidden;
+}
+
+.bg-header {
+    background-image: url("../img/bg_header_4k.png");
+    background-repeat: no-repeat; /* Para que no se repita */
+    background-position: top center; /* Para que esté centrada */
+    background-size: cover;
+}
+
+.bg-container {
+    background-image: url("../img/bg_large.png");
+    background-repeat: no-repeat; /* Para que no se repita */
+    background-position: top center; /* Para que esté centrada */
+    background-size: cover;
+}
+
+.text-gold {
+    /*color: #e0c366;*/
+    color: #ffd873;
+}
+
+.fs-big {
+    font-size: 2.5rem;
+}
+
+.bg-modal-sobre {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.btn-outline-custom {
+    color: #ffd873;
+    border: 1px solid #ffd873;
+    background-color: transparent;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+  
+.btn-outline-custom:hover {
+    color: #171616;
+    background-color: #ffd873;
+    border-color: #ffd873;
+}
+  
+.btn-outline-custom:focus,
+.btn-outline-custom.focus {
+    box-shadow: 0 0 0 0.25rem rgba(255, 216, 115, 0.5);
+}
+  
+.btn-outline-custom:active,
+.btn-outline-custom.active,
+.show > .btn-outline-custom.dropdown-toggle {
+    color: #171616;
+    background-color: #ffd873;
+    border-color: #ffd873;
+}
+  
+.btn-outline-custom:disabled,
+.btn-outline-custom.disabled {
+    color: #ffd873;
+    background-color: transparent;
+    border-color: #ffd873;
+    opacity: 0.65;
+}
+  
+.dark-green {
+    color: #0c241b;
+}
+
+.fs-bigger {
+    font-size: 3rem;
+}
+
+
+/** Animacion de hojas cayendo */
+/*#contenedor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 1000;
+  }
+  
+  .hoja {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    animation: caer 6s linear infinite;
+    opacity: 0.8;
+    will-change: transform, opacity;
+  }
+  
+  @keyframes caer {
+    0% {
+      transform: translateY(-10%) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(110vh) rotate(360deg);
+      opacity: 0;
+    }
+  }*/
+
+  /*#contenedor {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+  }*/
+
+  /*#contenedor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1000;
+  }
+
+  .estrella {
+    position: absolute;
+    color: #bc4b51;
+    font-size: 20px;
+    animation: caer 5s linear infinite;
+    opacity: 0.8;
+  }
+  
+  @keyframes caer {
+    0% {
+      transform: translateY(-10%);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(110vh);
+      opacity: 0;
+    }
+  }*/
+
+  /*#contenedor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    z-index: 1000;
+  }
+  
+  .estrella {
+    position: absolute;
+    color: #b2ffc8;
+    font-size: 20px;
+    animation: caer 5s linear forwards;
+    opacity: 0.8;
+  }
+  
+  @keyframes caer {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh);
+      opacity: 0;
+    }
+  }*/
+
+  #efecto-estrellas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* 👈 Esto evita que bloquee clics */
+    z-index: 1040;
+  }
+  
+  .estrella {
+    position: absolute;
+    font-size: 20px;
+    color: #d2e86f; /* o el color que elijas */
+    animation: caer 5s linear forwards;
+    opacity: 0.8;
+    pointer-events: none;
+  }
+  
+  @keyframes caer {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh);
+      opacity: 0;
+    }
+  }
+
+  .shine-text {
+    position: relative;
+    background: linear-gradient(90deg, gold, gold, white, gold, gold);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation: shine 4s linear infinite;
+  }
+
+  @keyframes shine {
+    0% {
+      background-position: -200% center;
+    }
+    100% {
+      background-position: 200% center;
+    }
+  }
+
+  .modal-fullscreen-centered {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
