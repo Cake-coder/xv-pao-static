@@ -5,7 +5,7 @@ html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-  }
+}
 
   * img {
     border: none;
@@ -46,17 +46,37 @@ body {
 }
 
 .bg-header {
-    background-image: url("../img/bg_header_4k.png");
-    background-repeat: no-repeat; /* Para que no se repita */
-    background-position: top center; /* Para que esté centrada */
-    background-size: cover;
+  background-image: url("../img/bg_header_4k.png");
+  background-repeat: no-repeat; /* Para que no se repita */
+  background-position: top center; /* Para que esté centrada */
+  background-size: cover;
 }
 
-.bg-container {
-    background-image: url("../img/bg_large.png");
-    background-repeat: no-repeat; /* Para que no se repita */
-    background-position: top center; /* Para que esté centrada */
-    background-size: cover;
+@media (max-width: 767.98px) {
+  .bg-container {
+      background-image: url("../img/bg_large.png");
+      background-repeat: no-repeat; /* Para que no se repita */
+      background-position: top center; /* Para que esté centrada */
+      background-size: cover;
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-container {
+      background-image: url("../img/bg_2.png");
+      background-repeat: no-repeat; /* Para que no se repita */
+      background-position: top center; /* Para que esté centrada */
+      background-size: cover;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bg-container  {
+      background-image: url("../img/bg_container.png");
+      background-repeat: no-repeat; /* Para que no se repita */
+      background-position: top center; /* Para que esté centrada */
+      background-size: contain;
+  }
 }
 
 .text-gold {
