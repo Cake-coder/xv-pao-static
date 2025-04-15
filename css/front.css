@@ -72,7 +72,7 @@ body {
 
 @media (min-width: 1024px) {
   .bg-container  {
-      background-image: url("../img/bg_container.png");
+      background-image: url("../img/bg_container.PNG");
       background-repeat: no-repeat; /* Para que no se repita */
       background-position: top center; /* Para que esté centrada */
       background-size: contain;
